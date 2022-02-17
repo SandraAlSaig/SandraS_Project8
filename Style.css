@@ -3,6 +3,10 @@
     box-sizing: border-box;
   }
 
+  header{
+    padding: 2em;
+  }
+
   body {
     width: 85%;
     position: relative;
@@ -11,19 +15,69 @@
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 10px;
+    padding: 1em;;
   }
 
   .card {
     margin: auto;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
+    display: inline-flex;
     padding: 1em;
     width: 90%;
     border-radius: 7px;
-    border: 1px ridge black;
-    background-color: lightgrey;
+    border: .5px ridge grey;
+    background-color: #E4E4E5;
+
   }
 
-  text-container{
-    float: right;
+  img {
+    border-radius: 50%;
+    margin: auto;
+    width: 6em;
+    height: 6em;
+  }
+
+  .text-container{
+    margin: auto;
+    width: 90%;
+    padding-left: 2em;
+    padding-right: .5em;
+  }
+
+  .name,
+  .email,
+  .address {
+    padding-bottom: .3em;
+  }
+
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(100, 100, 100, 0.6);
+  }
+
+  .modal {
+    width: 375px;
+    margin:  15% auto auto;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    background: #fff;
+    border: 1px ridge #778;
+    border-radius: 5px;
+  }
+
+  .modal-close {
+    position: absolute;
+    right: 15px;
+    top: 1em;
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
   }
