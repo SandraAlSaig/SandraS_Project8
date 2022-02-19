@@ -5,7 +5,7 @@ const urlAPI = `https://randomuser.me/api/?results=12&nat=au,us,ca&exc=login`;
 const gridContainer = document.querySelector(".grid-container");
 const overlay = document.querySelector(".overlay");
 const modalContainer = document.querySelector(".modal-content");
-const modalClose = document.querySelector("modal-close");
+const modalClose = document.querySelector(".modal-close");
 
 
 fetch(urlAPI)
@@ -56,7 +56,7 @@ fetch(urlAPI)
       <hr />
 
       <p>${phone}</p>
-      <p class="address">${street}, ${state} ${postcode}</p>
+      <p class="address">${street.name} ${street.number}, ${state} ${postcode}</p>
       <p>Birthday:
       ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
     </div>
