@@ -7,9 +7,9 @@ const overlay = document.querySelector(".overlay");
 const modalContainer = document.querySelector(".modal-content");
 const modalClose = document.querySelector(".modal-close");
 
-let currentModal = ;
-let next = ;
-let prev = ;
+// let currentModal = ;
+// let next = ;
+// let prev = ;
 
 
 fetch(urlAPI)
