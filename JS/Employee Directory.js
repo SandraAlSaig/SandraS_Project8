@@ -1,11 +1,15 @@
 
 
 let employees =[];
-const urlAPI = `https://randomuser.me/api/?results=12&nat=au,us,ca&exc=login`;
+const urlAPI = `https://randomuser.me/api/?results=12&nat=au,us &exc=login`;
 const gridContainer = document.querySelector(".grid-container");
 const overlay = document.querySelector(".overlay");
 const modalContainer = document.querySelector(".modal-content");
 const modalClose = document.querySelector(".modal-close");
+
+let currentModal = ;
+let next = ;
+let prev = ;
 
 
 fetch(urlAPI)
